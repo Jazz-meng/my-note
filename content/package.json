@@ -1,0 +1,27 @@
+{
+  "name": "my-note",
+  "version": "1.0.0",
+  "description": "这是my-note",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gitbook serve ./content ./gh-pages",
+    "deploy": "node ./scripts/deploy-gh-pages.js",
+    "build": "gitbook build ./content ./gh-pages",
+    "publish": "npm run build&&npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jazz-meng/my-note.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jazz-meng/my-note/issues"
+  },
+  "homepage": "https://github.com/Jazz-meng/my-note#readme"
+}
